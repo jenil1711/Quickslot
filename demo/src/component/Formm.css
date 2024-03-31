@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:var(--main-font-weight),500,600,700,800,var(--caerd-second-font-weight)");
+/* * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7ff;
+    height: 100vh;
+    
+} */
+
+/* /* .wrapper {
+    height: 100vh;
+    width: 100%;
+} */
+
+/* .homescreen{
+    margin: 100px 200px 0 600px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.form-div {
+    max-width: 600px;
+    margin-top: 0px;
+    padding: 20px;
+    border: 1px solid #151313;
+    border-radius: 8px;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+}
+
+.name-id-div,
+.day,
+.time,
+label[for="sport"],
+input[type="text"],
+button {
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.label-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.label-group label {
+    margin-right: 10px;
+}
+
+.day input[type="radio"],
+.time input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.time {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.time label {
+    display: flex;
+    align-items: center;
+}
+
+.time input {
+    margin-right: 5px;
+}
+ */
+
+/* Import your font from Google Fonts if desired */
+
+@import url("https://fonts.googleapis.com/css?family=Inter:var(--main-font-weight),500,600,700,800,var(--caerd-second-font-weight)");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif; /* Use your imported font or a fallback */
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7ff;
+  height: 100vh;
+}
+
+.homescreen {
+  margin: 100px auto 0 auto; /* Centered horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 450px; /* Max width for responsiveness */
+  height: auto;
+  padding: 25px;
+  border-radius: 8px;
+  background-color: #fff; /* Lighter background for better contrast */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Spacing between form elements */
+  width: 100%; /* Take full width inside homescreen */
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Horizontal spacing between label and input */
+}
+
+.label {
+  font-weight: 500; /* Slightly bolder label text */
+  color: #333; /* Darker text for better legibility */
+}
+.name-id-div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label[for="name"],
+input[type="text"],
+label[for="id"],
+input[type="text"],
+label[for="time"],
+input[type="email"],
+label[for="email"] {
+  color: #000;
+  font-family: "inter";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+}
+
+.innertimebox {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  border: 1px solid #c9c9c9;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.input-field {
+  width: 48%; /* Adjust width for two inputs in Name and ID */
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Consistent font size */
+}
+
+.name-id-div .name input,
+.name-id-div .id input,
+.name-id-div .email input {
+  display: flex;
+  height: 44px;
+  width: 300px;
+  padding: 10px 14px;
+  align-items: center;
+  gap: 8px;
+  font-size: 17px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--stork-style, #c9c9c9);
+  background: var(--White, #fff);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.time {
+  display: flex;
+  /* gap: 5px; */
+}
+
+.time .check {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+button {
+  display: block;
+  width: 150px;
+  padding: 10px 10px;
+  background-color: #0a142f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.0125rem;
+}
+
+button:hover {
+  background-color: rgba(154, 168, 242, 0.50);  }

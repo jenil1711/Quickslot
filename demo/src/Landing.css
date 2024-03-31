@@ -1,0 +1,12 @@
+.container {
+  background-color: #F7F7FF;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 90px;
+}
+

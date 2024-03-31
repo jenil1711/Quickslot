@@ -1,0 +1,52 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 423px;
+  height: 300px;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  background: #fff;
+  transition: all linear 200ms;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+  align-items: center;
+}
+.main .card img {
+      height: 33px;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 423px;
+  height: 300px;
+  background-color: #ffffff;
+  /* overflow: auto; */
+  border-radius: 25px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease; /* Changed the timing function for smoother transition */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Added to center align the content vertically */
+}
+
+.card img {
+  max-width: 100%; /* Ensures the image does not exceed the width of the container */
+  max-height: 80%; /* Ensures the image does not exceed the height of the container */
+  /* object-fit: cover; Helps maintain aspect ratio while covering the container */
+  border-radius: 25px 25px 0 0; /* Rounded corners for the top of the image */
+}
+.card:hover{
+   transform: scale(1.04);
+}
